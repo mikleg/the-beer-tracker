@@ -75,10 +75,10 @@ public class TestController {
     @RequestMapping(value = "test/map")
      public String map(Model model){
         Location loc = locationDao.findOne(1);
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+        //DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
         //LocalDateTime dateTime = LocalDateTime.of(1986, APRIL, 8, 12, 30);
         //String formattedDateTime = dateTime.format(formatter); // "1986-04-08 12:30"
-        System.out.println("current_time: " + loc.getDateOfCreation().format(formatter) );
+       // System.out.println("current_time: " + loc.getDateOfCreation().format(formatter) );
         final Gson gson = new Gson();
         System.out.println("Original Java object : " + loc);
         String json = gson.toJson(loc);
