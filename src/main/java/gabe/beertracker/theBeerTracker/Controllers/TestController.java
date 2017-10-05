@@ -52,7 +52,7 @@ public class TestController {
         beerTagDao.save(newBeerTag1);
         BeerTag newBeerTag2 = new BeerTag("tag2 dark");
         beerTagDao.save(newBeerTag2);
-        Location newLocation = new Location("location1", -25.363, 131.044);
+        Location newLocation = new Location("location1", 47.616565, -122.320886);
         locationDao.save(newLocation);
         List<BeerTag> listBeerTags = new ArrayList<>();
         listBeerTags.add(newBeerTag1);
